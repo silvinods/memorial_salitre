@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Toca do Salitre | Patrimônio Milenar no Sertão do Piauí</title>
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<nav class="navbar" id="mainNavbar">
+  <div class="container nav-container">
+    <div class="logo">Toca do <span>Salitre</span></div>
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#historia">História</a></li>
+      <li><a href="#comunidade">Comunidade</a></li>
+      <li><a href="#patrimonio">Patrimônio</a></li>
+      <li><a href="#natureza">Natureza</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#visite">Visite</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Fullscreen -->
+<section class="hero-fullscreen" style="background-image: url('https://placehold.co/1920x1080/A67B54/FFFFFF?text=Toca+do+Salitre+-+Tesouro+do+Piaui&font=playfair');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Serra Nova — Um Tesouro Histórico no Sertão do Piauí</h1>
+    <div class="hero-sub">Descubra a Toca do Salitre</div>
+    <div class="hero-badge-group">
+      <span class="hero-badge"><i class="fas fa-palette"></i> +200 pinturas rupestres</span>
+      <span class="hero-badge"><i class="fas fa-mountain"></i> Paisagem milenar</span>
+      <span class="hero-badge"><i class="fas fa-hand-peace"></i> Turismo comunitário</span>
+    </div>
+  </div>
+</section>
+
+<div class="main-content">
+  <section id="historia">
+    <div class="container">
+      <h2 class="section-title">Uma Viagem ao Passado</h2>
+      <p class="section-sub">Testemunhos de civilizações que habitaram o sertão há milhares de anos.</p>
+      <div class="grid-2cols">
+        <div class="card"><div class="card-icon"><i class="fas fa-landmark"></i></div><h3>Registros ancestrais</h3><p>As mais de <strong>200 pinturas rupestres</strong> da Toca do Salitre representam cenas do cotidiano, símbolos e grafismos rituais.</p></div>
+        <div class="card"><div class="card-icon"><i class="fas fa-clock"></i></div><h3>Conexão com o sagrado</h3><p>Silêncio da caatinga, formações rochosas e a energia preservada nas paredes de pedra.</p></div>
+      </div>
+      <div class="quote-block"><i class="fas fa-quote-left" style="margin-right:12px;color:#B56A33;"></i> Cada desenho preservado nas rochas carrega mistérios, conhecimentos e fragmentos da vida de civilizações ancestrais.</div>
+    </div>
+  </section>
+
+  <section id="comunidade" style="background:#FEF4E8;">
+    <div class="container">
+      <h2 class="section-title">A Comunidade Serra Nova</h2>
+      <div class="grid-2cols">
+        <div><p>A comunidade <strong>Serra Nova</strong>, zona rural de São Raimundo Nonato, guarda um modo de vida autêntico. Seus moradores preservam tradições, causos e o saber sertanejo.</p><div class="mt-2"><i class="fas fa-map-marker-alt"></i> São Raimundo Nonato – Piauí</div></div>
+        <div class="card"><i class="fas fa-hands-helping card-icon"></i><h3>Turismo Sustentável</h3><p>Valorização cultural, geração de renda e preservação dos sítios arqueológicos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="patrimonio"><div class="container"><h2 class="section-title">Patrimônio Histórico</h2><div class="grid-2cols"><div><div class="highlight-number">+200</div><p>Pinturas rupestres catalogadas. Sítio arqueológico protegido.</p></div><div style="background:#FAF0E4;border-radius:32px;padding:1.5rem;text-align:center;"><i class="fas fa-scroll" style="font-size:2.5rem;color:#C8894E;"></i><h3>Valorização da memória</h3><p>Berço de culturas ancestrais.</p></div></div></div></section>
+
+  <section id="natureza" style="background:#FDF6ED;"><div class="container"><h2 class="section-title">Beleza Bruta do Sertão</h2><div class="grid-2cols"><div class="card"><i class="fas fa-sun card-icon"></i><h3>Nascer e pôr do sol</h3><p>Luz dourada nas pinturas rupestres.</p></div><div class="card"><i class="fas fa-hiking card-icon"></i><h3>Trilhas e paisagens</h3><p>Formações rochosas e mirantes exclusivos.</p></div></div></div></section>
+
+  <!-- GALERIA DINÂMICA -->
+  <section id="galeria" class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Galeria de Memórias</h2>
+      <p class="section-sub">Fotos enviadas por visitantes e comunidade. Clique para ampliar.</p>
+      <div id="dynamicGallery" class="gallery-grid"></div>
+      <div class="text-center">
+        <button id="viewAllBtn" class="btn btn-outline"><i class="fas fa-images"></i> Ver todas as fotos</button>
+      </div>
+
+      <!-- Área para adicionar nova foto (simula banco de dados com localStorage) -->
+      <div class="upload-area">
+        <h3><i class="fas fa-upload"></i> Compartilhe sua experiência</h3>
+        <p>Adicione sua foto da Toca do Salitre (até 2MB, formato imagem).</p>
+        <input type="file" id="photoUpload" accept="image/jpeg,image/png,image/jpg">
+        <input type="text" id="photoCaption" placeholder="Legenda (ex: Pintura incrível)" style="width: 200px;">
+        <button id="submitPhotoBtn"><i class="fas fa-plus"></i> Adicionar foto</button>
+        <p id="uploadStatus" style="font-size:0.8rem; margin-top:8px;"></p>
+        <small><i class="fas fa-database"></i> As fotos ficam salvas no seu navegador (LocalStorage) simulando um banco de dados.</small>
+      </div>
+    </div>
+  </section>
+
+  <section><div class="container text-center"><h2 class="section-title">Por Que Conhecer?</h2><div class="features-grid" style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.8rem;margin:2rem 0;"><span class="feature-badge">+200 pinturas</span><span class="feature-badge">Patrimônio histórico</span><span class="feature-badge">Turismo sustentável</span><span class="feature-badge">Paisagens únicas</span></div><a href="#visite" class="btn">Quero viver essa experiência</a></div></section>
+
+  <section id="visite"><div class="container text-center"><h2 class="section-title">Venha Conhecer Serra Nova</h2><p style="max-width:700px;margin:1rem auto;">A Toca do Salitre espera por você com pinturas milenares e acolhimento sertanejo.</p><a href="#" class="btn btn-outline">Planeje sua visita</a></div></section>
+</div>
+
+<footer><div class="container"><p><i class="fas fa-gem"></i> Toca do Salitre — Patrimônio Vivo do Sertão Piauiense</p><p>Comunidade Serra Nova, São Raimundo Nonato – PI</p><p class="mt-2" style="font-size:0.7rem;">Substitua a imagem principal do hero pelas suas fotos reais. As imagens adicionadas ficam no localStorage.</p></div></footer>
+<script src="/javascript/script.js"></script>
+</body>
+</html>
